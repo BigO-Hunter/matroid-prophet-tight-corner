@@ -1,0 +1,25 @@
+Matroid prophet inequality: an exact rational guarantee above the listed C141
+
+Copyright (c) 2026 darkhipo
+
+This project is distributed under the Apache License, Version 2.0 (see LICENSE).
+
+It states an exact-rational certificate for the one-sample matroid prophet model, obtained
+by evaluating a published closed form at the exact rational point B = (261/256)^256 with
+three analysis constants tightened, and by checking every side condition as an exact
+rational inequality.
+
+The mathematical foundation is OpenAI's "One Sample Suffices for Matroid Prophet
+Inequalities against an Almighty Adversary", OpenAI Math release preprint, 23 September
+2026, commit 1581d4cbdd69a0faf34b2089614fe2a814316a6a; that repository's root license is
+Apache 2.0. The analysis constants and scalar chain are Ryan Shea's refinements, commit
+8cd1395994596d89ad20c2af8b69dab8e3402ee1 (github.com/shea256/open-math-problems), also
+Apache 2.0. The closed form, the conservative evaluation B > 141 and the incumbent
+certificate C141 are Qiuyu Chen (Euler), "An exact rational certificate for one-sample
+matroid prophet inequalities", bound-111 of github.com/canghaimeng/openai-math-improvement,
+17 October 2026.
+
+This repository's own contribution is the evaluation point, the refined analysis constants,
+and check_C.py. No upstream source text or code is redistributed here; the conditions are
+transcribed with citation in PROOF.md. These acknowledgments do not imply endorsement or
+independent review by any of the parties named above.
