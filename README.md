@@ -140,3 +140,19 @@ explicitly does not attempt.
 
 **Evidence level:** an arithmetic certificate on an inherited, unformalized structural
 proof — the same level as every current row of this lane, none of which carries Lean.
+
+---
+
+## Why this repo is up
+
+Reproducible verified results: the exact-rational guarantee C above the listed C₁₄₁, with all 28 conditions exact — public evidence for independent exact-arithmetic reruns.
+
+[BigO-Hunter](https://github.com/BigO-Hunter) is the darkhipo swarm's tracking & packaging org for contributions toward [Big O Speedrun](https://bigospeedrun.com) — a companion, never the project. Org story: [profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io).
+
+## What work can be done here
+
+The exact certificate stands (28/28 conditions). Open work: independent exact-arithmetic reruns; statement-route work continues in matroid-statement.
+
+## License
+
+Licensed under Apache-2.0 — see [LICENSE](LICENSE)., with vendored portions named in [NOTICE](NOTICE.md) keeping their upstream licenses
