@@ -55,3 +55,19 @@ structural proof.** The scalar layer is exactly checked; the structure
 (fixed-vector rule, exposure, hybrids, measurability) remains the prose of
 the cited papers — as it does for every current row of this lane, none of
 which carries Lean.
+
+---
+
+## Why this repo is up
+
+Public evidence, honestly superseded: the exact-B evaluation stands with its erratum corrected, and the repo records being superseded by matroid-prophet-tight-corner — kept as the reproducible exact-arithmetic record.
+
+[BigO-Hunter](https://github.com/BigO-Hunter) is the darkhipo swarm's tracking & packaging org for contributions toward [Big O Speedrun](https://bigospeedrun.com) — a companion, never the project. Org story: [profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io).
+
+## What work can be done here
+
+Complete as a record — the exact-B evaluation stands with its erratum corrected, and the repo records its supersession by matroid-prophet-tight-corner. Open work: none pending; kept for the erratum audit trail and exact-arithmetic reproducibility.
+
+## License
+
+Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE) ([github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf)). CFSF: copy-free (use for any purpose) and stays-free (nobody may fence this work). The name is unclaimed in software licensing (checked 2026-11-09) and is deliberately not "Copyfree" — the Copyfree Initiative's certification mark — since CFSF's anti-enclosure condition is excluded by their standard. 
