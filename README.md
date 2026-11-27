@@ -26,26 +26,13 @@ This is **+0.145801 %** above the value currently listed at rank 1 of the board,
 The exact integers above are the authority; every decimal in this repository is display
 only. `exact_fraction.txt` carries the same pair verbatim, and `check_C.py` regenerates it.
 
-## The board and the route it is filed under
+## The board
 
-Board: <https://bigospeedrun.com/other/matroid-prophet> — quantity is the largest
-guaranteed fraction `C` with `E[reward] ≥ C·E[OPT]`, one sample per element of an
-arbitrary finite matroid, adversary sees all samples, all values and all seed bits;
-higher wins.
-
-The route and evidence rules, as recorded in the campaign's board recon
-(`/about#submit`, `/about#latest-results`, `llms.txt`; the live pages were not re-fetched
-at package time):
-
-> "publish a public GitHub repo stating exact value + conditions verbatim + written proof
-> + exact checker; bigospeedrun's hourly agent flags it, a second agent reads it, checks
-> same-problem, adds as *'Claimed'* if new best."
-
-> "Standard = same problem, higher exact bound."
-
-So this repository is the artifact, and the reachable row is **Claimed** — the same row
-the current rank 1 occupies. There is no Lean challenge, no prove2me campaign and no
-review repository for this problem; the verifier has no matroid-prophet statement.
+Board: <https://bigospeedrun.com/other/matroid-prophet> — the largest guaranteed
+fraction `C` with `E[reward] ≥ C·E[OPT]`, one sample per element of an arbitrary
+finite matroid, almighty full-seed arrival-order adversary; higher wins. This
+repository is the public artifact (exact value + conditions + written proof + exact
+checker) for a **Claimed** row.
 
 ## What is whose
 
@@ -68,19 +55,15 @@ review repository for this problem; the verifier has no matroid-prophet statemen
 - **darkhipo (this repository)** — the evaluation of that published closed form at the
   *exact* rational `x = B = (261/256)²⁵⁶` instead of the floored integer `x = 141`, a
   refinement of the decay constant `d`, refinement of the two tilt constants `u` and `w`,
-  and the certificate file below. Nothing structural is new: no new inequality, no new
-  algorithm, the same `47n+27` seed budget.
+  and the certificate file below.
 
-## Prior publication
+## Superseded baseline
 
-The prior publication `matroid-prophet-exact-B` (public since 2026-11-02T06:52Z,
-now preserved at [`superseded/exact-B/`](superseded/exact-B/)) published
-**Increment 1 alone** — the same closed form evaluated at `x = B`, `C(B) =
-5.1106085087308568·10⁻¹⁰`. This repository supersedes it: strictly higher at
-`5.1149356887949947·10⁻¹⁰` (+0.084671 % over that figure), same construction family, every
-condition re-verified at the constants shipped here. The earlier repository's README
-displays `B ≈ 142.9`, a typo for `B = 141.42909383389553568`; the erratum is being filed
-separately and nothing in this repository depends on that display. The superseded certificate is preserved in this repository at [`superseded/exact-B/`](superseded/exact-B/) — full history at source tip `d4284e17afd8`, folded 2026-11-26 from `BigO-Hunter/matroid-prophet-exact-B` before that shell was deleted, including `check_scalar_B.py`, `result.json`, the exact fraction and the erratum.
+The Increment-1 certificate (`C(B) = 5.1106085087308568·10⁻¹⁰`, the same closed form
+evaluated at `x = B`) is preserved at [`superseded/exact-B/`](superseded/exact-B/)
+(source tip `d4284e17afd8`), with `check_scalar_B.py`, `result.json`, the exact
+fraction and the erratum. The certificate shipped here is strictly higher
+(+0.084671 %).
 
 ## The certificate
 
@@ -125,30 +108,14 @@ point and in three analysis constants. Every inequality in this repository is an
 rational comparison of integers — `A⁸p¹⁰⁵ < (uv)⁸`, `(1−p)⁸p¹¹³ < (wv)⁸`, `261²⁵⁶ >
 141·256²⁵⁶`, `d < λ_lo` — never a floating-point or logarithm evaluation.
 
-## Scope — what is and is not claimed
+## Scope
 
-**Claimed:** an exact-rational certificate for this construction under the source's stated
-model and conditions, with every side condition checked as an exact rational inequality.
-The universal statement (that the rule is prefix-feasible and reaches `C·OPT` for every
-finite matroid) is the cited papers' argument, re-instantiated at these constants; this
-repository does not re-prove it and ships no formalization.
-
-**Not claimed:** no new structural inequality; no new algorithm; no Lean proof; no
-polynomial-time or practical-performance claim; no exhaustive novelty claim. The
-parameter space of this construction is close to saturated — see `PROOF.md` §6 — so
-materially larger constants would need the structural refinement this repository
-explicitly does not attempt.
-
-**Evidence level:** an arithmetic certificate on an inherited, unformalized structural
-proof — the same level as every current row of this lane, none of which carries Lean.
-
----
-
-## Why this repo is up
-
-Reproducible verified results: the exact-rational guarantee C above the listed C₁₄₁, with all 28 conditions exact — public evidence for independent exact-arithmetic reruns.
-
-[BigO-Hunter](https://github.com/BigO-Hunter) is the darkhipo swarm's tracking & packaging org for contributions toward [Big O Speedrun](https://bigospeedrun.com) — a companion, never the project. Org story: [profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io).
+An exact-rational arithmetic certificate for the cited construction under the
+source's stated model and conditions: every side condition checked as an exact
+rational inequality. The universal statement (prefix-feasibility and `C·OPT` for
+every finite matroid) is the cited papers' argument re-instantiated at these
+constants; no formalization is shipped. The parameter space is close to saturation
+— see `PROOF.md` §6 — so materially larger constants need a structural refinement.
 
 ## What work can be done here
 
@@ -157,3 +124,7 @@ The exact certificate stands (28/28 conditions). Open work: independent exact-ar
 ## License
 
 Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE) ([github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf)). Vendored third-party material keeps its upstream license — see [NOTICE](NOTICE).
+
+---
+
+[BigO-Hunter](https://github.com/BigO-Hunter) — tracking & packaging org for [Big O Speedrun](https://bigospeedrun.com) contributions · [org profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io)
