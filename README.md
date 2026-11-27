@@ -79,7 +79,7 @@ review repository for this problem; the verifier has no matroid-prophet statemen
 `5.1149356887949947·10⁻¹⁰` (+0.084671 % over that figure), same construction family, every
 condition re-verified at the constants shipped here. The earlier repository's README
 displays `B ≈ 142.9`, a typo for `B = 141.42909383389553568`; the erratum is being filed
-separately and nothing in this repository depends on that display.
+separately and nothing in this repository depends on that display. The superseded certificate is preserved in this repository at [`superseded/exact-B/`](superseded/exact-B/) — full history at source tip `d4284e17afd8`, folded 2026-11-26 from `BigO-Hunter/matroid-prophet-exact-B` before that shell was deleted, including `check_scalar_B.py`, `result.json`, the exact fraction and the erratum.
 
 ## The certificate
 
