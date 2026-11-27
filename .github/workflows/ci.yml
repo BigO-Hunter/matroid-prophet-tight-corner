@@ -1,0 +1,24 @@
+name: Certificate check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Exact-rational certificate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the certificate
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      # No Lean package in this repo: the artifact is an exact-rational
+      # constant plus a stdlib-only checker (no floating point in any claim).
+      - name: Check every exact side condition at the shipped parameters
+        run: python3 check_C.py
+      - name: Reproduce the incumbent's published values
+        run: python3 check_C.py --selftest
