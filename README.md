@@ -73,7 +73,8 @@ review repository for this problem; the verifier has no matroid-prophet statemen
 
 ## Prior publication
 
-`darkhipo/matroid-prophet-exact-B` (public since 2026-11-02T06:52Z) published
+The prior publication `matroid-prophet-exact-B` (public since 2026-11-02T06:52Z,
+now preserved at [`superseded/exact-B/`](superseded/exact-B/)) published
 **Increment 1 alone** — the same closed form evaluated at `x = B`, `C(B) =
 5.1106085087308568·10⁻¹⁰`. This repository supersedes it: strictly higher at
 `5.1149356887949947·10⁻¹⁰` (+0.084671 % over that figure), same construction family, every
@@ -155,4 +156,4 @@ The exact certificate stands (28/28 conditions). Open work: independent exact-ar
 
 ## License
 
-Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE) ([github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf)). Vendored third-party material keeps its upstream license — see [NOTICE](NOTICE.md).
+Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE) ([github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf)). Vendored third-party material keeps its upstream license — see [NOTICE](NOTICE).
